@@ -47,6 +47,7 @@ The US Census Bureau
    
    *In the second attempt, 106 out of the 107 succeeded in retrieving the scores, and the only one left has duplicated **pageid** and **title** in the dataframe but with a different **lastrevid** and obtained score*
    
+![failAttempt](https://github.com/hww1999/data-512-homework_2/assets/50925030/aef07b9e-42f2-4bc5-8baa-2143685f9efc)
 
    
    
