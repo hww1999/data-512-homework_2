@@ -20,6 +20,40 @@ MediaWiki REST API
 
 The US Census Bureau
 
+# Data Preprocessing Steps
+
+1. obtained page information using WikiMedia - resulted in cities_by_state.json with 22157 rows of data and fields of (bolded fields are retained):
+   
+   **pageid**, 
+   ns, 
+   **title**, 
+   contentmodel, 
+   pagelanguage, 
+   pagelanguagehtmlcode, 
+   pagelanguagedir, 
+   touched, 
+   **'lastrevid'**, 
+   length, 
+   **talkid**, 
+   fullurl, 
+   editurl, 
+   canonicalurl, 
+   watchers, 
+   redirect, 
+   new
+3. Using personal access token and **lastrevid** from cities_by_state.json to obtain ORES score of articles
+
+   *During the first attempt to get the scores, 107 articles failed to get the scores, which are mainly regions in Stata Michigan and the score value are put in **REQUEST FAIL** to distinguish from articles that succeeded in the first attempt*
+   
+   *In the second attempt, 106 out of the 107 succeeded in retrieving the scores, and the only one left has duplicated **pageid** and **title** in the dataframe but with a different **lastrevid** and obtained score*
+   
+
+   
+   
+5. 
+   
+
+
 # Fields of Data Files
 
 
