@@ -101,7 +101,26 @@ Consider a company that is thinking of putting its advertisement on Wikipedia. T
 
 
 # Directory of the Repo
-
+```bash
+.
+├── LICENSE
+├── README.md
+├── data analysis.ipynb
+├── data preparation cleaned.ipynb
+├── data preparation.ipynb
+├── raw data
+│   ├── cities_by_state.json
+│   ├── score_first_attemp.csv
+│   └── updated_score.csv
+├── results (table)
+│   ├── bottom10.png
+│   ├── bottom10_high.png
+│   ├── top10.png
+│   ├── top10_high.png
+│   ├── top10_high_region.png
+│   └── top10_total_region.png
+└── wp_scored_city_articles_by_state.csv
+```
 
 # Tables
 
