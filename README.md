@@ -2,7 +2,7 @@
 
 # Goal of the Project
 
-The goal of this project is to explore the concept of bias in data using articles about cities in different U.S. states, which we could obtain from Wikipedia. In order to investigate further, we would combine the dataset of Wikipedia articles with a dataset of state populations, and use ORES (a machine learning service) to estimate the quality of the articles about the cities.
+The goal of this project is to explore the concept of bias in data using articles about cities in different U.S. states, which we could obtain from Wikipedia. In order to investigate further, we combineed the dataset of Wikipedia articles with a dataset of state populations and the regions to which each state belongs to, and use ORES (a machine learning service) to estimate the quality of the articles about the cities.
 
 The analysis will consists of three parts:
 
@@ -14,11 +14,19 @@ The analysis will consists of three parts:
 
 # License Used
 
-ORES
+## Tools/API used
 
-MediaWiki REST API
+**Wikimedia**:  to extract the page information of articles. [Sample code used in this project comes from here](https://drive.google.com/file/d/15UoE16s-IccCTOXREjU3xDIz07tlpyrl/view?usp=sharing)
 
-The US Census Bureau
+**ORES model**: provides the peer reviewed score of each article based on the quality. [Sample code used in this project comes from here](https://drive.google.com/file/d/17C9xsmR9U3lJeD52UTbAedlHDetwYsxs/view?usp=sharing)
+
+## Data files to start with
+
+**us_cities_by_state_SEPT.2023.csv**: the names/urls of the articles we would be working with. This data is scraped from [this WikiPedia page](https://en.wikipedia.org/wiki/Category:Lists_of_cities_in_the_United_States_by_state) and the scraped result could be found [here](https://drive.google.com/file/d/1khouDmMaZyKo0y5WkFj4lu7g8o35x_98/view?usp=sharing)
+
+**NST-EST2022-ALLDATA.csv**: this data is obtained from [here](https://www.census.gov/data/tables/time-series/demo/popest/2020s-state-total.html). I chose the full dataset instead of the excel file because the excel file is not in a table. I took out only the names of states and the estimated population of the states for the analysis
+
+**US States by Region in Table - US Census Bureau.csv**: the original dataset *US States by Region - US Census Bureau.csv* comes from [this file](https://docs.google.com/spreadsheets/d/14Sjfd_u_7N9SSyQ7bmxfebF_2XpR8QamvmNntKDIQB0/edit?usp=sharing)
 
 # Data Preprocessing Steps
 
@@ -49,31 +57,28 @@ The US Census Bureau
    
 ![failAttempt](https://github.com/hww1999/data-512-homework_2/assets/50925030/aef07b9e-42f2-4bc5-8baa-2143685f9efc)
 
-   
-   
-5. 
-   
-
+   *Last but not least, while taking out the duplicated rows should have been done in the first step, it is instead done here.*
 
 # Fields of Data Files
 
 The final dataset contains of fields of
-**state**
 
-**regional_division**
+**state** - the name of the sata
 
-**population**
+**regional_division** - the region to which the state belongs
 
-**article_title**
+**population** - the estimated population of the state in 2022
 
-**revision_id**
+**article_title** - title of the article that's related to the state
 
-**article_quality**
+**revision_id** - revision id of the article, which allowed us to obtained reviewed scores from ORES 
 
-
+**article_quality** - the predicted reviewed scores from ORES
 
 
 # Known issues/special considerations
+
+There exist some states missing from [the scraped dataset](https://drive.google.com/file/d/1khouDmMaZyKo0y5WkFj4lu7g8o35x_98/view?usp=sharing) and thus some states are being missed out in this analysis. Further, the data of regional population from [the Census Bureau](https://docs.google.com/spreadsheets/d/14Sjfd_u_7N9SSyQ7bmxfebF_2XpR8QamvmNntKDIQB0/edit?usp=sharing) might not fully align with the calculated results from the final dataset obtained using code files here. While it is assumed that we should keep on using the final dataset obtained from the code files, three regions out of four have different total populations than the ones from the Census Bureau. The differences were located however, while two regions have different populations due to the missing of two states from [the scraped dataset](https://drive.google.com/file/d/1khouDmMaZyKo0y5WkFj4lu7g8o35x_98/view?usp=sharing), the other's difference comes from that Census Bureau took District of Columbia into account when measuring regional population. Again, in order to stick to the dataset obtained from the code files, here we used the calculated regional population from the final dataset.
 
 # Research Implications
 
