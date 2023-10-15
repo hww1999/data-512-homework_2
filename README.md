@@ -57,6 +57,20 @@ The US Census Bureau
 
 # Fields of Data Files
 
+The final dataset contains of fields of
+**state**
+
+**regional_division**
+
+**population**
+
+**article_title**
+
+**revision_id**
+
+**article_quality**
+
+
 
 
 # Known issues/special considerations
