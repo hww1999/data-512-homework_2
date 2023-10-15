@@ -103,4 +103,28 @@ Consider a company that is thinking of putting its advertisement on Wikipedia. T
 # Directory of the Repo
 
 
-# Visualizations
+# Tables
+
+**The Top 10 Coverage by States**
+
+<img width="386" alt="top10" src="https://github.com/hww1999/data-512-homework_2/assets/50925030/2f6ca292-dadd-4d2c-9cdb-f99d89fd241a">
+
+**The Bottom 10 Coverage by States**
+
+<img width="371" alt="bottom10" src="https://github.com/hww1999/data-512-homework_2/assets/50925030/d3ecffbc-ee45-4e3e-97a8-f5d6e32e8e20">
+
+**The Top 10 High Quality Coverage by States**
+
+<img width="371" alt="top10_high" src="https://github.com/hww1999/data-512-homework_2/assets/50925030/66e6c401-20c7-46ff-9bfd-b7605734d975">
+
+**The Bottom 10 High Quality Coverage by States**
+
+<img width="376" alt="bottom10_high" src="https://github.com/hww1999/data-512-homework_2/assets/50925030/a261b546-f569-46a0-ad25-59c33fabb9f9">
+
+**The Top 10 Coverage by Regions**
+
+<img width="362" alt="top10_total_region" src="https://github.com/hww1999/data-512-homework_2/assets/50925030/8d51cc5b-ef08-42f2-a4f5-5a8af12ded53">
+
+**The Top 10 High Quality Coverage by Regions**
+
+<img width="336" alt="top10_high_region" src="https://github.com/hww1999/data-512-homework_2/assets/50925030/4c4d977e-9e00-48e5-96b7-0e182e6204f1">
