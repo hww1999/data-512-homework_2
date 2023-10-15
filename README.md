@@ -121,10 +121,10 @@ Consider a company that is thinking of putting its advertisement on Wikipedia. T
 
 <img width="376" alt="bottom10_high" src="https://github.com/hww1999/data-512-homework_2/assets/50925030/a261b546-f569-46a0-ad25-59c33fabb9f9">
 
-**The Top 10 Coverage by Regions**
+**The Coverage by Regions (in descending order)**
 
 <img width="362" alt="top10_total_region" src="https://github.com/hww1999/data-512-homework_2/assets/50925030/8d51cc5b-ef08-42f2-a4f5-5a8af12ded53">
 
-**The Top 10 High Quality Coverage by Regions**
+**The High Quality Coverage by Regions  (in descending order)**
 
 <img width="336" alt="top10_high_region" src="https://github.com/hww1999/data-512-homework_2/assets/50925030/4c4d977e-9e00-48e5-96b7-0e182e6204f1">
