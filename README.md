@@ -49,7 +49,7 @@ The analysis will consists of three parts:
    watchers, 
    redirect, 
    new
-3. Using personal access token and **lastrevid** from cities_by_state.json to obtain ORES score of articles
+2. Using personal access token and **lastrevid** from cities_by_state.json to obtain ORES score of articles
       *During the first attempt to get the scores, 107 articles failed to get the scores, which are mainly regions in Stata Michigan and the score value are put in **REQUEST FAIL** to distinguish from articles that succeeded in the first attempt*
    
    *In the second attempt, 106 out of the 107 succeeded in retrieving the scores, and the only one left has duplicated **pageid** and **title** in the dataframe but with a different **lastrevid** and obtained score*
@@ -58,7 +58,7 @@ The analysis will consists of three parts:
 
    *Last but not least, while taking out the duplicated rows should have been done in the first step, it is instead done here.*
    
-5. The final dataset *wp_scored_city_articles_by_state.csv* is produced in the *data analysis.ipynb* since an extra field was required to testify the differences between populations from own calculation and the US Census Bureau
+3. The final dataset *wp_scored_city_articles_by_state.csv* is produced in the *data analysis.ipynb* since an extra field was required to testify the differences between populations from own calculation and the US Census Bureau
 
 
 
