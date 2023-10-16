@@ -142,8 +142,18 @@ Consider a company that is thinking of putting its advertisement on Wikipedia. T
 
 **The Coverage by Regions (in descending order)**
 
-<img width="362" alt="top10_total_region" src="https://github.com/hww1999/data-512-homework_2/assets/50925030/8d51cc5b-ef08-42f2-a4f5-5a8af12ded53">
+**Using the population data from the US Census Bureau**
+<img width="348" alt="157e30db29d73f3ea67df5726e1590d" src="https://github.com/hww1999/data-512-homework_2/assets/50925030/cca9befe-d655-46fc-95fe-cdffb5914b96">
+
+**Using the population data from the final dataset with further calculation**
+<img width="519" alt="fa84ac3a00a8269032a501434cb0ea7" src="https://github.com/hww1999/data-512-homework_2/assets/50925030/01a2572d-bd71-4703-a3c2-d8a17ce7aa32">
 
 **The High Quality Coverage by Regions  (in descending order)**
 
-<img width="336" alt="top10_high_region" src="https://github.com/hww1999/data-512-homework_2/assets/50925030/4c4d977e-9e00-48e5-96b7-0e182e6204f1">
+**Using the population data from the US Census Bureau**
+
+<img width="524" alt="b67ca27eaa1e40598f9fb89ca9b4384" src="https://github.com/hww1999/data-512-homework_2/assets/50925030/0a97dc44-7661-4633-b9a7-2a580f6e9173">
+
+**Using the population data from the final dataset with further calculation**
+<img width="345" alt="3208bb1cf6f95adc98ab9fc8d205b7e" src="https://github.com/hww1999/data-512-homework_2/assets/50925030/b8000874-2bb4-4387-adfd-df439fb59dd7">
+
