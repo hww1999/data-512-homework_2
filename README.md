@@ -50,14 +50,17 @@ The analysis will consists of three parts:
    redirect, 
    new
 3. Using personal access token and **lastrevid** from cities_by_state.json to obtain ORES score of articles
-
-   *During the first attempt to get the scores, 107 articles failed to get the scores, which are mainly regions in Stata Michigan and the score value are put in **REQUEST FAIL** to distinguish from articles that succeeded in the first attempt*
+      *During the first attempt to get the scores, 107 articles failed to get the scores, which are mainly regions in Stata Michigan and the score value are put in **REQUEST FAIL** to distinguish from articles that succeeded in the first attempt*
    
    *In the second attempt, 106 out of the 107 succeeded in retrieving the scores, and the only one left has duplicated **pageid** and **title** in the dataframe but with a different **lastrevid** and obtained score*
    
 ![failAttempt](https://github.com/hww1999/data-512-homework_2/assets/50925030/aef07b9e-42f2-4bc5-8baa-2143685f9efc)
 
    *Last but not least, while taking out the duplicated rows should have been done in the first step, it is instead done here.*
+   
+5. The final dataset *wp_scored_city_articles_by_state.csv* is produced in the *data analysis.ipynb* since an extra field was required to testify the differences between populations from own calculation and the US Census Bureau
+
+
 
 # Fields of Data Files
 
@@ -116,10 +119,12 @@ Consider a company that is thinking of putting its advertisement on Wikipedia. T
 ├── results (table)
 │   ├── bottom10.png
 │   ├── bottom10_high.png
+│   ├── coverage_region.png
+│   ├── coverage_region_bureau.png
+│   ├── high_region.png
+│   ├── high_region_bureau.png
 │   ├── top10.png
-│   ├── top10_high.png
-│   ├── top10_high_region.png
-│   └── top10_total_region.png
+│   └── top10_high.png
 └── wp_scored_city_articles_by_state.csv
 ```
 
