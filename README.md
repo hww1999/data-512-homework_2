@@ -111,7 +111,8 @@ Consider a company that is thinking of putting its advertisement on Wikipedia. T
 ├── raw data
 │   ├── cities_by_state.json
 │   ├── score_first_attemp.csv
-│   └── updated_score.csv
+│   ├── updated_score.csv
+│   └── wp_scored_city_articles_by_state_pre.csv
 ├── results (table)
 │   ├── bottom10.png
 │   ├── bottom10_high.png
